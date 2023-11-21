@@ -26,6 +26,7 @@ import {
 import { Logo } from "@/components/icons";
 import NavAvatar from "./user/NavAvatar";
 import ShoppingCart from "./cart/ShoppingCart";
+import Image from "next/image";
 
 export const Navbar = () => {
   const searchInput = (
@@ -77,7 +78,8 @@ export const Navbar = () => {
 
       <NavbarBrand as="li" className="gap-3 max-w-fit">
         <NextLink className="flex justify-start items-center gap-1" href="/">
-          <Logo />
+          <Image src={'/demologo.png'} alt="Logo" width={100} height={100} />
+          {/* <Logo /> */}
         </NextLink>
       </NavbarBrand>
       <NavbarContent
@@ -90,7 +92,6 @@ export const Navbar = () => {
         <NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem>
         <ShoppingCart />
         <NavAvatar />
-        {/* <UserButton /> */}
       </NavbarContent>
 
       {/* Mobile Menu  */}
