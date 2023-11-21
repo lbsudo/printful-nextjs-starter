@@ -6,7 +6,7 @@ export const siteConfig = {
   navItems: [
     {
       label: "Docs",
-      href: "/docs",
+      href: "https://github.com/lbsudo/printful-nextjs-starter",
     },
     {
       label: "About",
@@ -20,7 +20,7 @@ export const siteConfig = {
     },
     {
       label: "Docs",
-      href: "/",
+      href: "https://github.com/lbsudo/printful-nextjs-starter",
     },
     {
       label: "About",
@@ -32,7 +32,7 @@ export const siteConfig = {
     },
   ],
   links: {
-    github: "https://github.com/nextui-org/nextui",
-    docs: "https://nextui.org",
+    github: "https://github.com/lbsudo",
+    docs: "https://github.com/lbsudo/printful-nextjs-starter",
   },
 };

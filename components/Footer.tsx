@@ -4,28 +4,9 @@ import Link from 'next/link'
 export default function Footer() {
   return (
     <>
-      <div className='py-6'>
-        <ul className='flex justify-center '>
-          <Link href={'/'}>
-            <li className='px-3'>CONTACT</li>
+      <div className='py-6 flex justify-center items-center'>
+        <p>Powered by Next.js and Printful, Built by <Link href='https://github.com/lbsudo' className='text-primary hover:text-secondary' target='_blank'>@lbsudo</Link></p>
 
-          </Link>
-          <Link href={'/'}>
-            <li className='px-3'>FAQ</li>
-          </Link>
-          <Link href={'/'}>
-            <li className='px-3'>RETURN POLICY</li>
-          </Link>
-          <Link href={'/'}>
-            <li className='px-3'>SHIPPING</li>
-          </Link>
-          <Link href={'/'}>
-            <li className='px-3'>TERMS & CONDITIONS</li>
-          </Link>
-          <Link href={'/'}>
-            <li className='px-3'>PRIVACY POLICY</li>
-          </Link>
-        </ul>
       </div>
     </>
   )
