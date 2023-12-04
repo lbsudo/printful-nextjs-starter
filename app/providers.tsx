@@ -16,15 +16,15 @@ export interface ProvidersProps {
 
 export function Providers({ children, themeProps }: ProvidersProps) {
   return (
-    <ClerkProvider appearance={{
-      baseTheme: dark,
-      signIn: { baseTheme: dark },
-    }}>
-      <Provider store={store}>
-        <NextUIProvider>
-          <NextThemesProvider {...themeProps}>{children}</NextThemesProvider>
-        </NextUIProvider>
-      </Provider>
-    </ClerkProvider>
+    <Provider store={store}>
+      <NextUIProvider>
+        <NextThemesProvider {...themeProps}>{children}</NextThemesProvider>
+      </NextUIProvider>
+    </Provider>
   );
+  {/* <ClerkProvider appearance={{ */ }
+  {/*   baseTheme: dark, */ }
+  {/*   signIn: { baseTheme: dark }, */ }
+  {/* }}> */ }
+  {/* </ClerkProvider > */ }
 }

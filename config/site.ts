@@ -15,10 +15,6 @@ export const siteConfig = {
   ],
   navMenuItems: [
     {
-      label: "Profile",
-      href: "/profile",
-    },
-    {
       label: "Docs",
       href: "https://github.com/lbsudo/printful-nextjs-starter",
     },
@@ -26,10 +22,7 @@ export const siteConfig = {
       label: "About",
       href: "/about",
     },
-    {
-      label: "Logout",
-      href: "/logout",
-    },
+
   ],
   links: {
     github: "https://github.com/lbsudo",

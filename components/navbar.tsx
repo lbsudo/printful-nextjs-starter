@@ -23,10 +23,12 @@ import {
   SearchIcon,
 } from "@/components/icons";
 
-import { Logo } from "@/components/icons";
+import { Pf } from "@/components/icons";
 import NavAvatar from "./user/NavAvatar";
 import ShoppingCart from "./cart/ShoppingCart";
 import Image from "next/image";
+import { FaPlus } from "react-icons/fa6";
+import { SiNextdotjs } from "react-icons/si";
 
 export const Navbar = () => {
   const searchInput = (
@@ -78,8 +80,10 @@ export const Navbar = () => {
 
       <NavbarBrand as="li" className="gap-3 max-w-fit">
         <NextLink className="flex justify-start items-center gap-1" href="/">
-          <Image src={'/demologo.png'} alt="Logo" width={100} height={100} />
-          {/* <Logo /> */}
+          <SiNextdotjs />
+          <FaPlus />
+          {/* <Image src={'/PF-stacked-monochrome.svg'} alt="Logo" width={2} heigh  t={100} /> */}
+          <Pf />
         </NextLink>
       </NavbarBrand>
       <NavbarContent
@@ -91,7 +95,7 @@ export const Navbar = () => {
         </NavbarItem>
         <NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem>
         <ShoppingCart />
-        <NavAvatar />
+        {/* <NavAvatar /> */}
       </NavbarContent>
 
       {/* Mobile Menu  */}
@@ -108,13 +112,7 @@ export const Navbar = () => {
           {siteConfig.navMenuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
               <Link
-                color={
-                  index === 2
-                    ? "primary"
-                    : index === siteConfig.navMenuItems.length - 1
-                      ? "danger"
-                      : "foreground"
-                }
+                className="text-white"
                 href="#"
                 size="lg"
               >
