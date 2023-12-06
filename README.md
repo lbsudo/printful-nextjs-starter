@@ -189,7 +189,16 @@ pnpm run dev
 
 Open [http://localhost:3000](http://localhost:3000) to see the storefront locally! 🚀
 
-You're now ready to build as you please. Happy Coding!
+### Server Actions & API Routes
+
+<details>
+<summary>Fetching Products<summary>
+    This template includes 4 server action functions for fetching products by category or only singular products.
+    There is also general server action functions, that fetch all products or fetch all product IDs.
+    The props for theses functions can be found by using the 'data' page. The 'data' page under the 'app' directory
+    returns the json data of your stores products. This data can be used to fill in the props of the getCategory function.
+    
+</details>
 
 ## License
 
