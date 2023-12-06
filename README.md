@@ -34,6 +34,8 @@ This is a template for creating an online ecommerce store from 0 to production f
 
 You'll first need to setup Stripe, Printful, and Clerk before you can run the storefront locally, or deploy.
 
+Please also not that you will not be able to use the webhook functionality if you do not have your project deployed.
+
 
 ### 1. Setup Printful
 
