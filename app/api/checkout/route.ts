@@ -52,8 +52,8 @@ export const POST = async (request: NextRequest) => {
         enabled: true,
       },
       billing_address_collection: "required",
-      success_url: `${process.env.NEXTAUTH_URL}/success`,
-      cancel_url: `${process.env.NEXTAUTH_URL}/`,
+      success_url: `${process.env.SITE_URL}/success`,
+      cancel_url: `${process.env.SITE_URL}/`,
       metadata: {
         email,
         items: JSON.stringify(orderData),
